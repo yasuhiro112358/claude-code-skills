@@ -57,7 +57,12 @@ Open a skill's `SKILL.md`, copy the prompt content (after the frontmatter `---`)
 
 ## Prompts
 
-Standalone prompts (no Claude Code required) will be added here.
+Standalone prompts (no Claude Code required).
+
+| Name | Description | Dependencies |
+|------|-------------|--------------|
+| [generate-prompt-from-conversation](prompts/generate-prompt-from-conversation.md) | Generate a reusable prompt from a completed AI conversation | None |
+| [code-dependency-analysis](prompts/code-dependency-analysis/) | Interactively extract C++/Java/C# dependency graphs (UML class & package diagrams in Mermaid) via chat AI + VS Code preview | Python 3.8+, VS Code + Mermaid Chart extension |
 
 ---
 
@@ -134,7 +139,12 @@ cp -r claude-code-skills/skills/smart-commit ~/.claude/skills/
 
 ## プロンプト
 
-Claude Code 不要で使える単体プロンプトはこちらに追加予定です。
+Claude Code 不要で使える単体プロンプト。
+
+| 名前 | 概要 | 依存 |
+|------|------|------|
+| [generate-prompt-from-conversation](prompts/generate-prompt-from-conversation.md) | 完了した AI 作業から再利用可能なプロンプトを生成 | なし |
+| [code-dependency-analysis](prompts/code-dependency-analysis/) | 対話型 AI + VS Code プレビューで C++/Java/C# の依存関係を段階抽出し UML クラス図・パッケージ図（Mermaid）を生成 | Python 3.8+、VS Code + Mermaid Chart 拡張 |
 
 ---
 
